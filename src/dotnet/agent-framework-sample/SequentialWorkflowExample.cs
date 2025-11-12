@@ -4,7 +4,7 @@ using Microsoft.Agents.AI;
 using Microsoft.Agents.AI.Workflows;
 using Microsoft.Extensions.AI;
 
-public static class WorkflowExample
+public static class SequentialWorkflowExample
 {
     public static async Task RunTranslationWorkflow(string endpoint, string deploymentName)
     {

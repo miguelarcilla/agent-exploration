@@ -6,7 +6,7 @@ using Microsoft.Extensions.AI;
 using OpenAI;
 
 
-public static class ToolCalling
+public static class ToolCallingExample
 {
     // Define a function tool that the agent can call.
     [Description("Get the weather for a given location.")]

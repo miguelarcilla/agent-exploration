@@ -9,5 +9,5 @@ var configuration = new ConfigurationBuilder()
 var endpoint = configuration["AZURE_OPENAI_ENDPOINT"] ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT not found in configuration");
 var deploymentName = configuration["AZURE_OPENAI_DEPLOYMENT_NAME"] ?? throw new InvalidOperationException("AZURE_OPENAI_DEPLOYMENT_NAME not found in configuration");
 
-//await ToolCalling.RunTranslationWorkflow(endpoint, deploymentName);
-await WorkflowExample.RunTranslationWorkflow(endpoint, deploymentName);
+await ToolCallingExample.RunTranslationWorkflow(endpoint, deploymentName);
+await SequentialWorkflowExample.RunTranslationWorkflow(endpoint, deploymentName);
